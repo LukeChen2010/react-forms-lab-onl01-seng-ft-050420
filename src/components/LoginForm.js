@@ -12,6 +12,15 @@ class LoginForm extends React.Component {
       [event.target.name]: event.target.value
     })
   }
+  
+  handleSubmit = event => {
+    event.preventDefault()
+
+    if (!this.state.username || !this.state.password) 
+    {
+      
+    }
+  }
 
   render() {
     return (
